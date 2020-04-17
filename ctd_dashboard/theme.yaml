@@ -1,0 +1,9 @@
+attrs:
+    Figure:
+        background_fill_color: "#FFFFFF"
+        outline_line_color: black
+        toolbar_location: right
+        height: 700
+        width: 500
+    Grid:
+        grid_line_color: "#DDDDDD"

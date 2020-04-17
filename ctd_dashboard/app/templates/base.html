@@ -1,0 +1,25 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }}g</title>
+      {% else %}
+      <title>CTD Dashboard</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>
+          <a href="{{ url_for('home') }}">Home</a>
+          <br></br>
+        </div>
+        <div>
+            Flagging Tools: 
+            <a href="{{ url_for('salts') }}">Salts</a>
+            ||
+            <a href="{{ url_for('salts') }}">Oxygen</a>
+            ||
+            <a href="{{ url_for('salts') }}">Nutrients</a>
+          </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
