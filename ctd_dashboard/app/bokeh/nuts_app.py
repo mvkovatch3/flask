@@ -20,7 +20,7 @@ from bokeh.models import (
 import app.bokeh.bokeh_funcs as bk
 
 
-def salt_app(doc):
+def nuts_app(doc):
 
     import app.bokeh.salt_config as cfg
 
@@ -122,7 +122,7 @@ def salt_app(doc):
 
     # intialize widgets
     save_button = Button(label="Save flagged data", button_type="success")
-    parameter = Select(title="Parameter", options=["CTDSAL", "CTDTMP"], value="CTDSAL")
+    parameter = Select(title="Parameter", options=["CTDSAL", "CTDTMP"], value="CTDTMP")
     ref_param = Select(title="Reference", options=["SALNTY"], value="SALNTY")
     # ref_param.options = ["foo","bar"]  # can dynamically change dropdowns
     station = Select(title="Station", options=ssscc_list, value=ssscc_list[0])
